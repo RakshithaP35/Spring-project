@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+  <bean class="com.xworkz.spring.place.Place" id = "place">
+  	<constructor-arg name = "language" value = "Kannada"></constructor-arg>
+  	<constructor-arg name = "location" value = "Karnataka"></constructor-arg>
+  </bean>
+  
+ <bean class= "java.lang.String" id= "place1">
+ 	<constructor-arg value = "Kannada"></constructor-arg>
+ </bean>
+ 
+<bean class= "java.lang.Integer" id= "place2">
+	<constructor-arg value="12"></constructor-arg>
+</bean>
+
+<bean class= "java.lang.Short" id= "place3">
+	<constructor-arg value="1"></constructor-arg>
+</bean>
+
+<bean class= "java.lang.Float" id= "place4">
+	<constructor-arg value="1.2"></constructor-arg>
+</bean>
+
+<bean class= "java.lang.Double" id= "place5">
+	<constructor-arg value="1.2345"></constructor-arg>
+</bean>
+
+<bean class= "java.lang.Character" id= "place6">
+	<constructor-arg value="A"></constructor-arg>
+</bean>
+ 
+ <bean class= "java.lang.Boolean" id= "place7">
+	<constructor-arg value="true"></constructor-arg>
+</bean>
+ 
+ <bean class= "java.lang.Byte" id= "place8">
+	<constructor-arg value="0"></constructor-arg>
+</bean>
+
+<bean class= "java.util.ArrayList" id = "place9">
+<constructor-arg value="null"></constructor-arg>
+</bean>
+
+<bean class= "java.util.HashSet" id = "place10">
+<constructor-arg value="null"></constructor-arg>
+</bean>
+ 
+ <bean class= "java.util.TreeSet" id = "place11">
+<constructor-arg value="null"></constructor-arg>
+</bean>
+
+ 
+</beans>
