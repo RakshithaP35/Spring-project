@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+  <bean class="com.xworkz.spring.fruits.Fruits" id = "fruits">
+  	<constructor-arg name = "name" value = "Apple"/>
+  	<constructor-arg name = "color" value = "Green Apple"/>
+  	<constructor-arg name = "price" value = "300.0"/>
+  	<constructor-arg name = "taste" value = "sour"/>
+  	
+  	<constructor-arg name = "vitamine" ref = "vitamine"/>
+  
+  </bean>
+  
+  <bean class="com.xworkz.spring.fruits.Vitamine" id = "vitamine">
+  <constructor-arg name = "type" value = "Vitamine A"/>
+  	<constructor-arg name = "isWaterSoluble" value = "true"/>
+  	<constructor-arg name = "isFatSouluble" value = "false"/>
+  
+  </bean>
+  </beans>
